@@ -1,3 +1,7 @@
+### `yarn install`
+
+Install the needed dependencies first
+
 ### `npm start`
 
 Starts up the application - spacing/css might be off still <br>
