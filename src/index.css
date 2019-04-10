@@ -1,14 +1,152 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'GotFont';
+  src: url('./Game\ of\ Thrones\ 3.ttf')  format('truetype')
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+div.gameOfThrones {
+  font-family: 'GoTFont', Fallback, sans-serif;
+}
+
+div.answers {
+  font-family: 'Arial';
+  display: inline-block;
+  text-align: left;
+}
+
+div.outerAlign {
+  text-align: center;
+}
+
+div.title {
+  font-size: 300%;
+  font-family: 'GoTFont', Fallback, sans-serif;
+  text-align: center;
+}
+
+div.tagline {
+  font-family: 'Arial';
+  display: inline-block;
+  text-align: left;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  flex-grow: 1;
+}
+
+img {
+  border: 1px solid black;
+  border-radius: 10%;
+  padding: 2px; 
+}
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  transform: scale(1.1);
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.practice-flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.practice-flex-container div {
+  border: 1px #ccc solid;
+  padding: 10px
+}
+
+.practice-left-flex-container {
+  flex-direction: column;
+}
+
+.practice-right-flex-container {
+  flex-direction: row;
+}
+
+.header-flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.left-flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.left-box {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-around;
+}
+
+.box-1 {
+  flex: 1;
+}
+
+.box-2 {
+  flex: 1;
+}
+
+@font-face {
+  font-family: 'GoTFont';
+  src: URL('/eon/public/Game\ of\ Thrones\ 3.ttf') format('truetype');
+}
+
+div {
+  font-family: 'GoTFont', Fallback, sans-serif;
+}
+
+div.answers {
+  font-family: 'Arial'
 }
